@@ -1,0 +1,7 @@
+<p>weather works!</p>
+
+<ol *ngIf="weatherInfos">
+    <li *ngFor="let wi of weatherInfos">
+        {{wi.temperatureC}}C {{wi.summary}}
+    </li>
+</ol>

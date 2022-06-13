@@ -20,7 +20,7 @@ export class WeatherComponent {
 
 
   constructor(private readonly client: HttpClient) {
-    this.client.get<WeatherInfo[]>('https://localhost:7285/WeatherForecast')
+    this.client.get<WeatherInfo[]>('https://rpo11-api.herokuapp.com/WeatherForecast')
     .subscribe(data => this.weatherInfos = data);
    }
 
